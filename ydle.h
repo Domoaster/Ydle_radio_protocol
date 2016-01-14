@@ -56,6 +56,7 @@ class ydle : public IProtocol
     void Start() ;
 
     void Receive(uint8_t) ;
+    void Receive (std::vector<uint16_t> &){};
     void SendACK(frame_ydle *frame) ;
     void Send(frame_ydle *frame) ;
 
